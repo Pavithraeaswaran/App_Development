@@ -1,0 +1,140 @@
+/* General Styling for HTML and Body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background-image: url('../Images/ground.jpeg');
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    
+
+}
+
+/* Container for Login and Register Pages */
+.login-body, .register-body {
+    background-image: url('../Images/ground.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Main Container for Form */
+.login-main, .register-main {
+    width: 350px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly less transparent */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.login-main:hover, .register-main:hover {
+    transform: translateY(-5px); /* Elevate on hover */
+}
+
+/* Heading Styles */
+.login-main h1, .register-main h1 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Input and Label Styles */
+.input-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.input-error {
+    border-color: #dc3545; /* Red border for errors */
+}
+
+.error-message {
+    color: #dc3545; /* Red for error messages */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Button Styles */
+.login-main button, .register-main button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff; /* Primary blue button */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.login-main button:hover, .register-main button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox Container */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+/* Register Link */
+.register-link {
+    font-size: 14px;
+    color: #007bff;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styling for Login */
+.login-main .error-message {
+    margin-bottom: 15px;
+}
